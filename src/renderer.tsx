@@ -16,6 +16,9 @@ const title = `Front-end Node.js`;
 export const headlessDocsUrl = `https://wpengine.com/builders/headless`;
 export const faustJsDocsUrl = `https://github.com/wpengine/faustjs`;
 
+// When creating from a backup, we don't want to render the environment add-on UI.
+let hideHeadlessEnvironmentDetails = false;
+
 const nodeJSSiteOverviewHook = (site: Site, siteStatus: string) => {
 	const hasNodeJSHeadlessSite = site?.services?.nodejs?.role;
 	const nodeJSHeadlessLocalUrl = `localhost:${site?.services?.nodejs?.ports?.HTTP[0]}`;
@@ -58,6 +61,8 @@ export default function (context) {
 	 * Add Blueprints as an option when creating a new site
 	 */
 	hooks.addFilter('CreateSite:Steps', (steps) => {
+		hideHeadlessEnvironmentDetails = steps?.[0]?.key === 'create-from-backup';
+
 		const headlessBlueprintSteps = [
 			{
 				key: 'add-headless-blueprint-add-wordpress',
@@ -101,9 +106,12 @@ export default function (context) {
 	// Create the additional selection option to be displayed during site creation
 	hooks.addContent(
 		'NewSiteEnvironment_EnvironmentDetails',
-		({ disableButton }) => (
-			<HeadlessEnvironmentSelect disableButton={disableButton} />
-		),
+		({ disableButton }) => {
+			if (hideHeadlessEnvironmentDetails) {
+				return null;
+			}
+			return <HeadlessEnvironmentSelect disableButton={disableButton} />;
+		},
 	);
 
 	hooks.addContent('Blueprints_BlueprintsList:after', () => (
