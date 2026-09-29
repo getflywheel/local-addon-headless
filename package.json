@@ -132,7 +132,8 @@
 		"ws": "^7.5.11",
 		"ajv": "^6.15.0",
 		"picomatch": "^2.3.2",
-		"undici": "^6.28.0"
+		"undici": "^6.28.0",
+		"@babel/core": "^7.29.6"
 	},
 	"engines": {
 		"local-by-flywheel": "^6.5.2"
