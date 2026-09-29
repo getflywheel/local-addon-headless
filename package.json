@@ -37,7 +37,7 @@
 		"@getflywheel/local": "9.2.9",
 		"@types/classnames": "^2.2.9",
 		"@types/dateformat": "^3.0.1",
-		"@types/enzyme": "^3.10.8",
+		"@types/enzyme": "3.10.19",
 		"@types/enzyme-adapter-react-16": "^1.0.6",
 		"@types/jest": "^26.0.13",
 		"@types/node": "^22.17",
