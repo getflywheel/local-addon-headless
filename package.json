@@ -125,7 +125,8 @@
 		"browserslist": "4.28.9",
 		"postcss-selector-parser": "6.1.4",
 		"form-data": "^3.0.5",
-		"flatted": "^3.4.2"
+		"flatted": "^3.4.2",
+		"lodash": "^4.18.1"
 	},
 	"engines": {
 		"local-by-flywheel": "^6.5.2"
