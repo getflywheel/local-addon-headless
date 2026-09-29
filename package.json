@@ -34,7 +34,7 @@
 	},
 	"devDependencies": {
 		"@getflywheel/eslint-config-local": "1.0.5",
-		"@getflywheel/local": "9.2.9",
+		"@getflywheel/local": "10.1.2",
 		"@types/classnames": "^2.2.9",
 		"@types/dateformat": "^3.0.1",
 		"@types/enzyme": "3.10.19",
