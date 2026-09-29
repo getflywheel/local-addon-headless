@@ -135,7 +135,8 @@
 		"undici": "^6.28.0",
 		"@babel/core": "^7.29.6",
 		"@tootallnate/once": "^2.0.1",
-		"brace-expansion": "^1.1.18"
+		"brace-expansion": "^1.1.18",
+		"diff": "^5.2.2"
 	},
 	"engines": {
 		"local-by-flywheel": "^6.5.2"
