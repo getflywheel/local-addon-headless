@@ -2777,9 +2777,9 @@ electron-to-chromium@^1.5.420:
   integrity sha512-SghDzqdJokdz8zP8YNlvS74+CwLRoUPDGvP/gFA+HrKVw+pOshUAgx8pXR37xl/u16zGae746rFNWvZ/22kU2Q==
 
 electron@^42.2.0:
-  version "42.11.9"
-  resolved "https://registry.yarnpkg.com/electron/-/electron-42.11.9.tgz#3f5d349f49c72eb6add797b24dd49abcb0a5126a"
-  integrity sha512-vPTlQws45virTh1jb/dSROz6xGkXgtEcdyT5n+0+etCmHqMtvp4Pgs6Sx5bvna+AEDAMeq10uRcjdMKCTk2Gtw==
+  version "42.11.18"
+  resolved "https://registry.yarnpkg.com/electron/-/electron-42.11.18.tgz#2785cfd76815006df8ab2f392da9daa8f0dfc09b"
+  integrity sha512-hbzodG06x/l7uq+oeyob5ugv6qZBmJRWC7Uto5QEE99xSHUARz6d+++Rz+79T/ssTYTQkONW4ciTTcJuAbXKIQ==
   dependencies:
     "@electron-internal/extract-zip" "^1.0.1"
     "@electron/get" "^5.0.0"
